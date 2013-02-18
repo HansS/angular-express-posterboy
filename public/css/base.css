@@ -1,3 +1,58 @@
+h1, h2, h3, h4, h5, h6, p { margin: 0; padding: 0; }
+
+/* -----------------------------------------------------------------------------
+ * Base Text
+ * -----------------------------------------------------------------------------
+ * The text described here uses a ratio of 3:4 based from 14.
+ * Technically the text elements adhere to a "Perfect Fourths" ratio.
+ *
+ * The line-height needs to be set based inclusively on the text width, so
+ * we'll handle that within media queries.
+ * 
+ * Numbers divided by 14px for convenience:
+ *  - 21px = 1.5
+ *  - 23px = 1.64285714286
+ *  - 25px = 1.78571428571
+ *  - 27px = 1.92857142857
+ *  - 28px = 2
+ *  - 29px = 2.07142857143
+ *  - 31px = 2.21428571429
+ *  - 34px = 2.42857142857
+ *  - 35px = 2.5
+ *  - 39px = 2.78571428571
+ *  - 40px = 2.85714285714
+ *  - 44px = 3.14285714286
+ *  - 45px = 3.21428571429
+ */
+
+/**
+ * Physical Attributes
+ */
+body,
 html {
-  font-family: "Arial Narrow", Arial, clean, sans-serif;
+  font-size: 14px; /* Sets 1em to 14px */
 }
+
+h1 { font-size: 2.369em; line-height: 3.14285714286; }
+h2 { font-size: 2.036em; line-height: 2.78581428571; }
+h3 { font-size: 1.777em; line-height: 2.42857142857; }
+h4 { font-size: 1.528em; line-height: 2.07142857143; }
+h5 { font-size: 1.333em; line-height: 1.92857142857; }
+h6 { font-size: 1.146em; line-height: 1.64285714286; }
+
+p  { font-size: 1em; line-height: 1.5; }
+
+/**
+ * Families
+ */
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/**
+ * Colors
+ */
+a { color: #0088cc; }
+a:hover{}
+a:visited{}
