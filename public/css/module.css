@@ -5,9 +5,16 @@
  */
 
 .stream-post {
-
+  margin-bottom: 10%;
 }
 .stream-post__avatar {
+  width: 10%;
+  min-width: 50px;
+}
+.stream-post__avatar__img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 
 }
 .stream-post__meta {
@@ -18,4 +25,19 @@
 }
 .stream-post__content__controls {
 
+}
+
+@media screen and (min-width: 540px) {
+  .stream-post {
+    display: table;
+  }
+  .stream-post__avatar {
+    max-width: 26%;
+    margin-right: 2%;
+    float: left;
+  }
+  .stream-post__content {
+    width: 78%;
+    float: left;
+  }
 }
