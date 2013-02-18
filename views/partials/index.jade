@@ -1,19 +1,16 @@
-div.span5
-  div(ng-repeat='post in posts | orderBy:id:reverse', class='msg-container')
-    div.avatar
-      | <img src='/img/default-avatar.png' class='default-avatar' />
-    div.message-outer
-      div.message.well
-        div(class='controls clearfix')
-          a(href='deletePost/{{post.id}}', class='close', title='delete')
-            i.icon-remove-circle
-          a(href='editPost/{{post.id}}', class='close', title='edit')
-            i.icon-edit
-          a(href='readPost/{{post.id}}', class='close', title='more')
-            i.icon-resize-full
-        div(class='message-text msg-{{post.id}}')
-          span(class='msg-preview', ng-bind-html-unsafe="post.text|convert")
+div(ng-repeat='post in posts | orderBy:id:reverse', class='stream-post')
+  <img src='/img/default-avatar.png' class='default-avatar stream-post__avatar' />
+  div.stream-post__content.well
+    div(class='controls clearfix')
+      a(href='deletePost/{{post.id}}', class='close', title='delete')
+      i.icon-remove-circle
+      a(href='editPost/{{post.id}}', class='close', title='edit')
+      i.icon-edit
+      a(href='readPost/{{post.id}}', class='close', title='more')
+      i.icon-resize-full
+      div(class='message-text msg-{{post.id}}')
+        span(class='msg-preview', ng-bind-html-unsafe="post.text|convert")
           a(href='javascript://', class='msg-expand', ng-click='msgExpand(post)')
 
-div(class='span4')
+div(class='')
   include addPost
