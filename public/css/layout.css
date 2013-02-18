@@ -1,3 +1,12 @@
+.navbar {
+  padding: 0 2%;
+  background: #f2f2f2;
+}
 .content {
   padding: 2%;
+}
+@media screen and (min-width: 540px) {
+  .content {
+    width: 70%;
+  }
 }
